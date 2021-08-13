@@ -1,0 +1,25 @@
+namespace AsteraX;
+
+table NumberAsteroidData
+{
+    type:short;
+    number:short;
+}
+
+table LevelDataObject
+{
+    levelindex:int;
+    minvelocity:float;
+    maxvelocity:float;
+    maxangularvelocity:float;
+    listasteroid:[NumberAsteroidData];
+    hasboss:bool;
+    bosstype:short;
+}
+
+table DataLevel
+{
+    data:[LevelDataObject];
+}
+
+root_type DataLevel;
